@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnSwipeRight.setOnClickListener {
-            cardStack.swipeTopCardLeft(180)
+            cardStack.swipeTopCardRight(180)
         }
 
         binding.btnAddCard.setOnClickListener {
