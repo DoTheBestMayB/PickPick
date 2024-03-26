@@ -137,7 +137,7 @@ class SwipeListener(
             callback.cardSwipedLeft()
             deactivated = true
         } else if (cardBeyondRightBorder()) {
-            animateOffScreenLeft(SwipeDeck.ANIMATION_TIME)
+            animateOffScreenRight(SwipeDeck.ANIMATION_TIME)
                 .setListener(cardAnimator)
             callback.cardSwipedRight()
             deactivated = true
