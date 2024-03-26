@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
                 Log.i(TAG, "cardActionUp")
             }
         })
-        cardStack.setLeftImage(R.id.left_image)
-        cardStack.setRightImage(R.id.right_image)
+        cardStack.setLeftImage(R.id.image_view_left)
+        cardStack.setRightImage(R.id.image_view_right)
 
         binding.btnSwipeLeft.setOnClickListener {
             cardStack.swipeTopCardLeft(180)

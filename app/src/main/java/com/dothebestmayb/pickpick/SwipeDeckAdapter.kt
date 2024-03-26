@@ -32,7 +32,7 @@ class SwipeDeckAdapter(
             // TODO Q1. 원본 코드에서는 SwipeDeckAdapter를 MainActivity 내부에 선언하여 getLayoutInflater 함수를 호출했는데,
             //  클래스를 분리한 현재 코드에서 이렇게 접근해도 되나요?
             val inflater = (context as Activity).layoutInflater
-            inflater.inflate(R.layout.test_card2, parent, false)
+            inflater.inflate(R.layout.item_card, parent, false)
         } else {
             convertView
         }
