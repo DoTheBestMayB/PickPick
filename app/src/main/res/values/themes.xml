@@ -4,6 +4,20 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+    
+    <declare-styleable name="SwipeDeck">
+        <attr name="max_visible" format="integer"/>
+        <attr name="rotation_degrees" format="float"/>
+        <attr name="card_spacing" format="dimension"/>
+        <attr name="render_above" format="boolean"/>
+        <attr name="render_below" format="boolean"/>
+        <attr name="opacity_end" format="float"/>
+        <attr name="card_gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+    </declare-styleable>
 
     <style name="Theme.PickPick" parent="Base.Theme.PickPick" />
 </resources>
