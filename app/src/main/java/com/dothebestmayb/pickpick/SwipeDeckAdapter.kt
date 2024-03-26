@@ -37,8 +37,8 @@ class SwipeDeckAdapter(
             convertView
         }
         val imageView = view.findViewById<ImageView>(R.id.offer_image)
-        // TODO 7. Piccaso가 무슨 라이브러리인지, 꼭 필요한지 찾아보기
-        Picasso.with(context).load(R.drawable.ssr_card).fit().centerCrop().into(imageView)
+        imageView.setImageResource(R.drawable.ssr_card)
+        imageView.scaleType = ImageView.ScaleType.FIT_XY
         val textView = view.findViewById<TextView>(R.id.sample_text)
         textView.text = getItem(position).toString()
 
